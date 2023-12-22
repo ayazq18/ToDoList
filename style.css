@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body { 
+	background: #ececec; 
+}
+
+.todo-list{
+    width: 50vw;
+    /* height: 50vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 40px;
+    background-color: #9fd3c7;
+    box-shadow: 0 2px 8px black;
+    /* overflow: hidden; */
+}
+
+.header{
+    width: 30vw;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+}
+
+.header i{
+    font-size: 25px;
+}
+
+.input{
+    border: none;
+    padding: 10px 30px;
+    margin: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.add{
+    padding: 10px 20px;
+    margin: 20px;
+    border: none;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.list{
+    background-color: #385170;
+    padding: 40px;
+    margin: 20px;
+    width: 40vw;
+    display: none;
+}
+
+.listItem{
+    background-color: #142d4c;
+    color: #9fd3c7;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 15px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.listitem-content{
+    width: 25vw;
+    color: #142d4c;
+    background-color: #9fd3c7;
+    padding: 8px;
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.listitem-content:hover{
+    overflow:scroll;
+    text-wrap: wrap;
+}
+
+.icon{
+    background-color: #385170;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+.delete-icon{
+    font-size: 20px;
+    cursor: pointer;
+    animation: rotate 2s 1 ease;
+    animation-delay: 1s;
+}
+
+@keyframes rotate{
+    0%{transform: rotate(90deg);}
+    50%{transform: rotate(180deg);}
+    75%{transform: rotate(270deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.delete-icon:hover{
+    transform: scale(1.1);
+}
+
+.view-icon{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.view-icon:hover{
+    transform: scale(1.1);
+}
